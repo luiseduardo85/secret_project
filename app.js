@@ -13,7 +13,7 @@ var userAuthorised = false;
 app.use(bodyParser.urlencoded({extended: true}))
 
 function passwordCheck(req, res, next){
-    const password = req.boyd["password"];
+    const password = req.body["password"];
     if(password === "ILoveProgramming"){
         userAuthorised = true;
     };
